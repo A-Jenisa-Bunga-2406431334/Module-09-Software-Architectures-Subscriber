@@ -16,7 +16,7 @@ Dengan menambahkan `thread::sleep(ten_millis)` pada subscriber, subscriber menja
 
 ![slow_subscriber.png](screenshoots/slow_subscriber.png)
 
-## Running at Least Three Subscribers
+## Reflection and Running at Least Three Subscribers
 
 Dengan menjalankan 3 subscriber secara bersamaan, beban pemrosesan pesan terbagi di antara ketiga subscriber. Terlihat pada RabbitMQ browser bahwa **Consumers: 3** dan antrian pesan berkurang lebih cepat dibandingkan hanya 1 subscriber. Ini menunjukkan bahwa event-driven architecture memungkinkan scaling horizontal dengan mudah — cukup tambah subscriber baru tanpa mengubah publisher sama sekali.
 ![three_subscribers.png](screenshoots/three_subscribers.png)
